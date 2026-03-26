@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(171, 240, 82);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    z-index: 100;
+}
+
+body {
+    padding-top: 100px;
+    margin-left: 10px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.logo-icons{
+    width: 80px;
+    cursor: pointer;
+}
+.logo a h2 span {
+    color: rgb(21, 90, 39);
+}
+
+.logo a h2 {
+    color: rgb(33, 173, 70);
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 10px;
+}
+.autres-pages-webs ul {
+    margin-left: 25px;
+    display: flex;
+    list-style: none;
+}
+
+.autres-pages-webs ul li a {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(255, 255, 255)
+}
+
+.autres-pages-webs ul a {
+    margin-left: 50px;
+}
+
+.header-end ul li a {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(255, 255, 255)
+}
+
+.flexy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.texte-soulignage-avance {
+    text-decoration: none;
+    position: relative;
+}
+
+.autres-pages-webs{
+    margin-left: 25px;
+    display: flex;
+}
+
+.header-end ul {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.texte-soulignage-avance::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out;
+}
+  
+.texte-soulignage-avance:hover::after {
+    transform: scaleX(1);
+}
+
+.texte-soulignage-avance:hover {
+    color: green;
+}
+
+.accueil {
+    background-color: rgb(171, 240, 82);
+    background-image: radial-gradient(circle at center, rgb(169, 209, 116) 0%, rgb(171, 240, 82) 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    z-index: 0; 
+}
+.accueil h2{
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-weight: 900;
+    color:rgb(255, 255, 255)
+}
+
+.accueil h3{
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color:rgb(255, 255, 255)
+}
+
+.boutons-projets {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.bouton {
+  padding: 14px 26px;
+  border-radius: 20px; 
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.bouton-nature-hdf {
+  background: linear-gradient(100deg,#33ab03, #9fff3f);
+  color: white;
+  box-shadow: 0 8px 20px rgba(166, 255, 0, 0.791);
+}
+
+.bouton-nature-hdf:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(115, 255, 0, 0.4);
+}
+
+.bouton-nature-actu {
+  background: #5c8d3d;
+  color: white;
+  border: 1px solid #86c82b;
+}
+
+.bouton-nature-actu:hover {
+  background: #679a31;
+  transform: translateY(-4px);
+}
+
+
+.hdf {
+    max-width: 900px;
+    margin: 120px auto;
+    padding: 40px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #7adb20, #0b7d12);
+    color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.hdf::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, rgba(255,255,255,0.1), transparent);
+    pointer-events: none;
+}
+
+.hdf h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.hdf li {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.image-droite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*/commencement page nature */ 
+
+.Natureh2 {
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+#Naturehdf- {
+    font-size: 20px;
+    font-weight: 100;
+    display: block;
+    position: relative;
+    height: 40px;
+    margin-top: 50px;
+}
+
+#Naturehdf-::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(23, 158, 27);
+    width: 350px;
+    height: 5px;
+    bottom: 0;
+}
+
+#explications_nature {
+    margin-top: 20px;
+}
+
+#salons {
+    font-size: 20px;
+    font-weight: 100;
+    position: relative;
+    height: 88px;
+    margin-top: 40px;
+}
+
+#salons::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(23, 158, 27);
+    width: 90px;
+    height: 5px;
+    bottom: 0;
+}
+
+.drone img {
+    width: 100%;
+}
+
+.drone {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#Texte-drone {
+    margin: 0px 0px 0px 40px;
+    align-items: center;
+    display: flex;
+}
+
+#image-terrils {
+    border: 5px solid #15e765;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 6px #15e765;
+    margin-top: 30px;
+}
+
+.Robot-voiture_chien img {
+    width: 100%;
+}
+.Robot-voiture_chien {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#Texte-Robot_Chien_voiture {
+    margin: 0px 0px 0px 40px;
+    align-items: center;
+    display: flex;
+}
+
+#image-plage_dunkerque {
+    border: 5px solid #15e765;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 6px #15e765;
+    margin-top: 40px;
+}
+
+.Rubika img {
+    width: 100%;
+}
+.Rubika {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#Texte-Rubika {
+    margin: 0px 0px 0px 40px;
+    align-items: center;
+    display: flex;
+}
+
+#image-rubika {
+    border: 5px solid #15e765;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 6px #15e765;
+    margin-top: 65px;
+}
+
+.end {
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+}
+
+.barre_verte_dunkerque {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    height: 40px;
+    margin-top: 40px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.barre_verte_dunkerque::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(23, 158, 27);
+    width: 200px;
+    height: 5px;
+    bottom: 0;
+}
+
+.Dune-Dune {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    height: 40px;
+    margin-top: 40px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.Dune-Dune::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(23, 158, 27);
+    width: 100px;
+    height: 5px;
+    bottom: 0;
+}
+
+#image-dune {
+    border: 5px solid #15e765;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 6px #15e765;
+    margin-top: 40px;
+}
+
+.actualites-info {
+    max-width: 900px;
+    margin: 120px auto;
+    padding: 40px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #7adb20, #0b7d12);
+    color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.actualites-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, rgba(255,255,255,0.1), transparent);
+    pointer-events: none;
+}
+
+.actualites-info h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.barre_verte_piton_de_la_fournaise {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    height: 20px;
+    margin-top: 40px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.barre_verte_piton_de_la_fournaise::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(23, 158, 27);
+    width: 200px;
+    height: 5px;
+    bottom: 0;
+}
+
+#barre_verte_piton_de_la_fournaise {
+    font-size: 20px;
+    font-weight: 100;
+    position: relative;
+    height: 88px;
+    margin-top: 40px;
+}
+
+#barre_verte_piton_de_la_fournaise::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(23, 158, 27);
+    width: 250px;
+    height: 5px;
+    bottom: 0;
+}
+
+#Piton_fournaise_textes {
+    margin: 0px 0px 0px 40px;
+    align-items: center;
+    display: flex;
+}
